@@ -15,9 +15,9 @@
 <div class="alert alert-info" id="tfmessage">
     <p>
         <?= Yii::t(
-            'usuario',
-            'Scan the QrCode with Google Authenticator App, then insert its temporary code on the box and submit.'
-        ) ?>
+    'usuario',
+    'Scan the QrCode with Google Authenticator App, then insert its temporary code on the box and submit.'
+) ?>
     </p>
 </div>
 

@@ -212,6 +212,11 @@ class Module extends BaseModule
     public $disableIpLogging = false;
 
     /**
+     * @var array with the name of the roles used to force 2fa authentication.
+     */
+    public $rolesWithForced2fa = [];
+
+    /**
      * @return string with the hit to be used with the give consent checkbox
      */
     public function getConsentMessage()

@@ -23,18 +23,18 @@ $networksVisible = count(Yii::$app->authClientCollection->clients) > 0;
     <div class="panel-heading">
         <h3 class="panel-title">
             <?= Html::img(
-                $user->profile->getAvatarUrl(24),
-                [
+    $user->profile->getAvatarUrl(24),
+    [
                     'class' => 'img-rounded',
                     'alt' => $user->username,
                 ]
-            ) ?>
+) ?>
             <?= $user->username ?>
         </h3>
     </div>
     <div class="panel-body">
         <?= Menu::widget(
-            [
+                [
                 'options' => [
                     'class' => 'nav nav-pills nav-stacked',
                 ],
@@ -52,6 +52,6 @@ $networksVisible = count(Yii::$app->authClientCollection->clients) > 0;
                     ],
                 ],
             ]
-        ) ?>
+            ) ?>
     </div>
 </div>

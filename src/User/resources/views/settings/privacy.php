@@ -22,24 +22,26 @@ $this->title = Yii::t('usuario', 'Privacy settings');
                     <div class="col-md-6">
                         <h3><?= Yii::t('usuario', 'Export my data') ?></h3>
                         <p><?= Yii::t(
-                                'usuario',
-                                'Here you can download your personal data in a comma separated values format.'
-                            ) ?>
+    'usuario',
+    'Here you can download your personal data in a comma separated values format.'
+) ?>
                         </p>
-                        <?= Html::a(Yii::t('usuario', 'Download my data'),
-                            ['/user/settings/export'],
-                            [
+                        <?= Html::a(
+                                Yii::t('usuario', 'Download my data'),
+                                ['/user/settings/export'],
+                                [
                                 'class' => 'btn btn-info',
                                 'target' => '_blank'
-                            ])
+                            ]
+                            )
                         ?>
                     </div>
                     <div class="col-md-6">
                         <h3><?= Yii::t('usuario', 'Delete my account') ?></h3>
                         <p><?= Yii::t(
-                                'usuario',
-                                'This will remove your personal data from this site. You will no longer be able to sign in.'
-                            ) ?>
+                            'usuario',
+                            'This will remove your personal data from this site. You will no longer be able to sign in.'
+                        ) ?>
                         </p>
                         <?php if ($module->allowAccountDelete): ?>
                             <?= Html::a(
@@ -53,13 +55,14 @@ $this->title = Yii::t('usuario', 'Privacy settings');
                                 ]
                             ) ?>
                         <?php else:
-                            echo Html::a(Yii::t('usuario', 'Delete'),
+                            echo Html::a(
+                                Yii::t('usuario', 'Delete'),
                                 ['/user/settings/gdpr-delete'],
                                 [
                                     'class' => 'btn btn-danger',
                                     'id' => 'gdpr-del-button',
-
-                                ])
+                                ]
+                            )
                             ?>
                         <?php endif ?>
                     </div>

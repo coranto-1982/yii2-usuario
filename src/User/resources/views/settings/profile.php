@@ -41,7 +41,7 @@ $timezoneHelper = $model->make(TimezoneHelper::class);
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin(
-                    [
+    [
                         'id' => $model->formName(),
                         'options' => ['class' => 'form-horizontal'],
                         'fieldConfig' => [
@@ -52,7 +52,7 @@ $timezoneHelper = $model->make(TimezoneHelper::class);
                         'enableClientValidation' => false,
                         'validateOnBlur' => false,
                     ]
-                ); ?>
+); ?>
 
                 <?= $form->field($model, 'name') ?>
 

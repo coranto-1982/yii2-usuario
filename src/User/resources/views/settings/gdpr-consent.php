@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+
 /** @var \yii\base\DynamicModel $model */
 /** @var string $gdpr_consent_hint */
 ?>
@@ -8,10 +9,10 @@ use yii\widgets\ActiveForm;
 <div class="row">
     <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <?php $form = ActiveForm::begin(
-            [
+    [
                 'id' => $model->formName(),
             ]
-        ); ?>
+); ?>
         <div class="panel panel-info give-consent-panel">
             <div class="panel-heading">
                 <h1 class="panel-title"><?= Yii::t('usuario', 'Data privacy') ?></h1>

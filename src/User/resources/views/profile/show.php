@@ -24,12 +24,12 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <?= Html::img(
-                    $profile->getAvatarUrl(230),
-                    [
+    $profile->getAvatarUrl(230),
+    [
                         'class' => 'img-rounded img-responsive',
                         'alt' => $profile->user->username,
                     ]
-                ) ?>
+) ?>
             </div>
             <div class="col-sm-6 col-md-8">
                 <h4><?= $this->title ?></h4>
@@ -50,10 +50,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         <li>
                             <i class="glyphicon glyphicon-envelope text-muted"></i>
                             <?= Html::a(
-                                Html::encode($profile->public_email),
-                                'mailto:' .
+                    Html::encode($profile->public_email),
+                    'mailto:' .
                                 Html::encode($profile->public_email)
-                            )
+                )
                             ?>
                         </li>
                     <?php endif; ?>

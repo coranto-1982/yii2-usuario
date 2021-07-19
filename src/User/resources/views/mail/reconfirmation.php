@@ -20,10 +20,10 @@ use yii\helpers\Html;
 </p>
 <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
     <?= Yii::t(
-        'usuario',
-        'We have received a request to change the email address for your account on {0}',
-        Yii::$app->name
-    ) ?>.
+    'usuario',
+    'We have received a request to change the email address for your account on {0}',
+    Yii::$app->name
+) ?>.
     <?= Yii::t('usuario', 'In order to complete your request, please click the link below') ?>.
 </p>
 <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">

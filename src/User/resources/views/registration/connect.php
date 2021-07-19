@@ -32,16 +32,16 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="alert alert-info">
                     <p>
                         <?= Yii::t(
-                            'usuario',
-                            'In order to finish your registration, we need you to enter following fields'
-                        ) ?>:
+    'usuario',
+    'In order to finish your registration, we need you to enter following fields'
+) ?>:
                     </p>
                 </div>
                 <?php $form = ActiveForm::begin(
-                    [
+                            [
                         'id' => $model->formName(),
                     ]
-                ); ?>
+                        ); ?>
 
                 <?= $form->field($model, 'email') ?>
 
@@ -54,12 +54,12 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
         <p class="text-center">
             <?= Html::a(
-                Yii::t(
+                    Yii::t(
                     'usuario',
                     'If you already registered, sign in and connect this account on settings page'
                 ),
-                ['/user/settings/networks']
-            ) ?>.
+                    ['/user/settings/networks']
+                ) ?>.
         </p>
     </div>
 </div>

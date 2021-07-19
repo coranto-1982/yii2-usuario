@@ -8,8 +8,8 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-use yii\widgets\ActiveForm;
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 
 /* @var $model \Da\User\Form\GdprDeleteForm */
 ?>
@@ -26,9 +26,9 @@ use yii\helpers\Html;
                 <p><?= Yii::t('usuario', 'You are about to delete all your personal data from this site.') ?></p>
                 <p class="text-danger">
                     <?= Yii::t(
-                        'usuario',
-                        'Once you have deleted your data, you will not longer be able to sign in with this account.'
-                    ) ?>
+    'usuario',
+    'Once you have deleted your data, you will not longer be able to sign in with this account.'
+) ?>
                 </p>
                 <hr>
                 <?php

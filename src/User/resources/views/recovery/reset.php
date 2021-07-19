@@ -29,12 +29,12 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin(
-                    [
+    [
                         'id' => $model->formName(),
                         'enableAjaxValidation' => true,
                         'enableClientValidation' => false,
                     ]
-                ); ?>
+); ?>
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 

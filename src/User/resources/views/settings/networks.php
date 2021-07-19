@@ -41,13 +41,13 @@ $this->params['breadcrumbs'][] = $this->title;
                         .</p>
                 </div>
                 <?php $auth = ConnectWidget::begin(
-                    [
+    [
                         'baseAuthUrl' => ['/user/security/auth'],
                         'accounts' => $user->socialNetworkAccounts,
                         'autoRender' => false,
                         'popupMode' => false,
                     ]
-                ) ?>
+) ?>
                 <table class="table">
                     <?php foreach ($auth->getClients() as $client): ?>
                         <tr>

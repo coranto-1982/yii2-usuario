@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <?= Nav::widget(
-                                    [
+    [
                                         'options' => [
                                             'class' => 'nav-pills nav-stacked',
                                         ],
@@ -69,7 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             ],
                                         ],
                                     ]
-                                ) ?>
+) ?>
                             </div>
                         </div>
                     </div>
@@ -79,12 +79,12 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="alert alert-info">
                                     <?= Yii::t('usuario', 'Credentials will be sent to the user by email') ?>.
                                     <?= Yii::t(
-                                        'usuario',
-                                        'A password will be generated automatically if not provided'
-                                    ) ?>.
+                                    'usuario',
+                                    'A password will be generated automatically if not provided'
+                                ) ?>.
                                 </div>
                                 <?php $form = ActiveForm::begin(
-                                    [
+                                        [
                                         'layout' => 'horizontal',
                                         'enableAjaxValidation' => true,
                                         'enableClientValidation' => false,
@@ -94,16 +94,16 @@ $this->params['breadcrumbs'][] = $this->title;
                                             ],
                                         ],
                                     ]
-                                ); ?>
+                                    ); ?>
 
                                 <?= $this->render('/admin/_user', ['form' => $form, 'user' => $user]) ?>
 
                                 <div class="form-group">
                                     <div class="col-lg-offset-3 col-lg-9">
                                         <?= Html::submitButton(
-                                            Yii::t('usuario', 'Save'),
-                                            ['class' => 'btn btn-block btn-success']
-                                        ) ?>
+                                    Yii::t('usuario', 'Save'),
+                                    ['class' => 'btn btn-block btn-success']
+                                ) ?>
                                     </div>
                                 </div>
 

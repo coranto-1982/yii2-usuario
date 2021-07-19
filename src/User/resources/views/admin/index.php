@@ -66,9 +66,8 @@ $module = Yii::$app->getModule('user');
                         return Yii::t('usuario', 'Never');
                     } elseif (extension_loaded('intl')) {
                         return Yii::t('usuario', '{0, date, MMM dd, YYYY HH:mm}', [$model->last_login_at]);
-                    } else {
-                        return date('Y-m-d G:i:s', $model->last_login_at);
                     }
+                    return date('Y-m-d G:i:s', $model->last_login_at);
                 },
             ],
             [
@@ -154,7 +153,7 @@ $module = Yii::$app->getModule('user');
                         return null;
                     },
                     'reset' => function ($url, $model) use ($module) {
-                        if($module->allowAdminPasswordRecovery) {
+                        if ($module->allowAdminPasswordRecovery) {
                             return Html::a(
                                 '<span class="glyphicon glyphicon-flash"></span>',
                                 ['/user/admin/password-reset', 'id' => $model->id],

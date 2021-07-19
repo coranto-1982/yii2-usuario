@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <?= Nav::widget(
-                                    [
+    [
                                         'options' => [
                                             'class' => 'nav-pills nav-stacked',
                                         ],
@@ -121,7 +121,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             ],
                                         ],
                                     ]
-                                ) ?>
+) ?>
                             </div>
                         </div>
                     </div>

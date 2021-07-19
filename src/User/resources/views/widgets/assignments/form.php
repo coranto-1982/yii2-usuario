@@ -25,22 +25,22 @@ use yii\widgets\ActiveForm;
 <?php if ($model->updated): ?>
 
     <?= Alert::widget(
-        [
+    [
             'options' => [
                 'class' => 'alert-success',
             ],
             'body' => Yii::t('usuario', 'Assignments have been updated'),
         ]
-    ) ?>
+) ?>
 
 <?php endif ?>
 
 <?php $form = ActiveForm::begin(
-    [
+        [
         'enableClientValidation' => false,
         'enableAjaxValidation' => false,
     ]
-) ?>
+    ) ?>
 
 <?= Html::activeHiddenInput($model, 'user_id') ?>
 

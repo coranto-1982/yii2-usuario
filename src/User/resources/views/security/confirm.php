@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin(
-                    [
+    [
                         'id' => $model->formName(),
                         'enableAjaxValidation' => true,
                         'enableClientValidation' => false,
@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'validateOnType' => false,
                         'validateOnChange' => false,
                     ]
-                ) ?>
+) ?>
                 <?= $form->field(
                     $model,
                     'twoFactorAuthenticationCode',
@@ -51,10 +51,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="row">
                     <div class="col-md-6">
                         <?= Html::a(
-                            Yii::t('usuario', 'Cancel'),
-                            ['login'],
-                            ['class' => 'btn btn-default btn-block', 'tabindex' => '3']
-                        ) ?>
+                    Yii::t('usuario', 'Cancel'),
+                    ['login'],
+                    ['class' => 'btn btn-default btn-block', 'tabindex' => '3']
+                ) ?>
                     </div>
                     <div class="col-md-6">
                         <?= Html::submitButton(

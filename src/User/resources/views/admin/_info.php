@@ -32,10 +32,10 @@
         <td><strong><?= Yii::t('usuario', 'Confirmation status') ?>:</strong></td>
         <?php if ($user->isConfirmed): ?>
             <td class="text-success"><?= Yii::t(
-                    'usuario',
-                    'Confirmed at {0, date, MMMM dd, YYYY HH:mm}',
-                    [$user->confirmed_at]
-                ) ?></td>
+    'usuario',
+    'Confirmed at {0, date, MMMM dd, YYYY HH:mm}',
+    [$user->confirmed_at]
+) ?></td>
         <?php else: ?>
             <td class="text-danger"><?= Yii::t('usuario', 'Unconfirmed') ?></td>
         <?php endif ?>

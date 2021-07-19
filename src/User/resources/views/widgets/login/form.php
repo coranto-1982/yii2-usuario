@@ -24,7 +24,7 @@ use yii\widgets\ActiveForm;
 
 <?php if (Yii::$app->user->isGuest): ?>
     <?php $form = ActiveForm::begin(
-        [
+    [
             'id' => 'login-widget-form',
             'action' => Url::to(['/user/security/login']),
             'enableAjaxValidation' => true,
@@ -33,7 +33,7 @@ use yii\widgets\ActiveForm;
             'validateOnType' => false,
             'validateOnChange' => false,
         ]
-    ) ?>
+) ?>
 
     <?= $form->field($model, 'login')->textInput(['placeholder' => 'Login']) ?>
 

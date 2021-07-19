@@ -40,7 +40,7 @@ $module = Yii::$app->getModule('user');
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin(
-                    [
+    [
                         'id' => $model->formName(),
                         'options' => ['class' => 'form-horizontal'],
                         'fieldConfig' => [
@@ -50,7 +50,7 @@ $module = Yii::$app->getModule('user');
                         'enableAjaxValidation' => true,
                         'enableClientValidation' => false,
                     ]
-                ); ?>
+); ?>
 
                 <?= $form->field($model, 'email') ?>
 
@@ -104,15 +104,15 @@ $module = Yii::$app->getModule('user');
                     </p>
                     <div class="text-right">
                         <?= Html::a(
-                            Yii::t('usuario', 'Disable two factor authentication'),
-                            ['two-factor-disable', 'id' => $model->getUser()->id],
-                            [
+                    Yii::t('usuario', 'Disable two factor authentication'),
+                    ['two-factor-disable', 'id' => $model->getUser()->id],
+                    [
                                 'id' => 'disable_tf_btn',
                                 'class' => 'btn btn-warning ' . ($model->getUser()->auth_tf_enabled ? '' : 'hide'),
                                 'data-method' => 'post',
                                 'data-confirm' => Yii::t('usuario', 'This will disable two factor authentication. Are you sure?'),
                             ]
-                        ) ?>
+                ) ?>
                         <?= Html::a(
                             Yii::t('usuario', 'Enable two factor authentication'),
                             '#tfmodal',

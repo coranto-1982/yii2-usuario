@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin(
-                    [
+    [
                         'id' => $model->formName(),
                         'enableAjaxValidation' => true,
                         'enableClientValidation' => false,
@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'validateOnType' => false,
                         'validateOnChange' => false,
                     ]
-                ) ?>
+) ?>
 
                 <?= $form->field(
                     $model,
@@ -70,9 +70,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '4']) ?>
 
                 <?= Html::submitButton(
-                    Yii::t('usuario', 'Sign in'),
-                    ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']
-                ) ?>
+                        Yii::t('usuario', 'Sign in'),
+                        ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']
+                    ) ?>
 
                 <?php ActiveForm::end(); ?>
             </div>
@@ -91,9 +91,9 @@ $this->params['breadcrumbs'][] = $this->title;
             </p>
         <?php endif ?>
         <?= ConnectWidget::widget(
-            [
+                    [
                 'baseAuthUrl' => ['/user/security/auth'],
             ]
-        ) ?>
+                ) ?>
     </div>
 </div>
